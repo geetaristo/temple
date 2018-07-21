@@ -6,6 +6,11 @@ export class Welcome {
   }
 
   render () {
-    this.elem.innerHTML = `Hello World... putting ${this.data} into ${this.elemId}`
+    this.elem.innerHTML = 
+    `
+    <div>
+      Hello World... putting ${this.data} into ${this.elemId}
+    </div>
+    `
   }
 }

@@ -1,6 +1,8 @@
 <html>
   <head>
     <title>temple - pure javascript/module example templating.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <bod>
     <div id="#app">
@@ -10,7 +12,7 @@
   <script source='/src/app.js'></script>
   <script type="module">
     import {Welcome} from './src/templates/welcome.mjs';
-    const welcomer = new Welcome({a:'thing'}, '#app')
+    const welcomer = new Welcome('thing', '#app')
     welcomer.render()
   </script>
 </html>
