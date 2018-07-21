@@ -1,7 +1,6 @@
 import { Template } from './template.mjs'
-export class Welcome extends Template {
+export class Another extends Template {
   constructor(data, elemId){
-    super()
     this.data = data
     this.elemId = elemId
     this.elem = document.getElementById(elemId)
@@ -11,7 +10,7 @@ export class Welcome extends Template {
     this.elem.innerHTML = 
     `
     <div>
-      Hello World... putting ${this.data} into ${this.elemId}
+      Another Template ${this.data} into ${this.elemId}
     </div>
     `
   }

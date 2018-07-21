@@ -1,7 +1,5 @@
-import { Template } from './template.mjs'
-export class Welcome extends Template {
+export class Template {
   constructor(data, elemId){
-    super()
     this.data = data
     this.elemId = elemId
     this.elem = document.getElementById(elemId)
@@ -11,7 +9,7 @@ export class Welcome extends Template {
     this.elem.innerHTML = 
     `
     <div>
-      Hello World... putting ${this.data} into ${this.elemId}
+      Default template rendering '${this.data}' into ${this.elemId} ... you must override this method.
     </div>
     `
   }
