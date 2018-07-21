@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>temple - pure javascript/module example templating.</title>
+  </head>
+  <bod>
+    <div id="#app">
+
+    </div>
+  </bod>
+  <script source='/src/app.js'></script>
+  <script type="module">
+    import {Welcome} from './src/templates/welcome.mjs';
+    const welcomer = new Welcome({a:'thing'}, '#app')
+    welcomer.render()
+  </script>
+</html>
